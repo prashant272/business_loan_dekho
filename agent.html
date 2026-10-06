@@ -1,0 +1,3328 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+
+
+    <meta charset="utf-8">
+
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+
+    <meta name="description" content="aads - ">
+
+    <meta name="author" content="aads">
+
+    <meta name="keywords" content="">
+
+    <!-- Favicon -->
+
+    <link rel="icon" href="https://aadsfinancial.com/img/logo2.png" type="image/x-icon" />
+
+    <meta name="csrf-token" content="LmU6eLMxmlrptXkE3wLzKxSuXTrh3TtMOrOD8aR2">
+
+    <title>aads</title>
+
+    <!-- Bootstrap css-->
+
+    <link id="style" href="https://aadsfinancial.com/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Icons css-->
+
+    <link href="https://aadsfinancial.com/plugins/web-fonts/icons.css" rel="stylesheet" />
+
+    <link href="https://aadsfinancial.com/plugins/web-fonts/font-awesome/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://aadsfinancial.com/plugins/web-fonts/plugin.css" rel="stylesheet" />
+
+    <!-- Style css-->
+
+    <link href="https://www.aadsfinancial.com/css/style.css" rel="stylesheet">
+
+    <!-- Select2 css-->
+
+    <link href="https://aadsfinancial.com/plugins/select2/css/select2.min.css" rel="stylesheet">
+
+    <!-- Mutipleselect css-->
+
+    <link rel="stylesheet" href="https://aadsfinancial.com/plugins/multipleselect/multiple-select.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/css/toastr.css" rel="stylesheet" />
+
+    <!-- Internal Daterangepicker css-->
+
+    <link href="https://aadsfinancial.com/plugins/bootstrap-daterangepicker/daterangepicker.css">
+
+    <!-- Internal TelephoneInput css-->
+
+    <link rel="stylesheet" href="https://aadsfinancial.com/plugins/telephoneinput/telephoneinput.css">
+
+    <!-- <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/daterangepicker/daterangepicker.css"> -->
+
+
+
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+
+    <style>
+        select.minimal {
+
+            background-image: linear-gradient(45deg, transparent 50%, gray 50%), linear-gradient(135deg, gray 50%, transparent 50%), linear-gradient(to right, #ccc, #ccc);
+
+            background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em;
+
+            background-size: 5px 5px, 5px 5px, 1px 1.5em;
+
+            background-repeat: no-repeat;
+
+        }
+    </style>
+
+
+
+    <!-- Google tag (gtag.js) -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YWL6KEN6X5"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+
+
+        function gtag() {
+
+            dataLayer.push(arguments);
+
+        }
+
+        gtag('js', new Date());
+
+
+
+        gtag('config', 'G-YWL6KEN6X5');
+    </script>
+
+</head>
+
+
+
+<body class="ltr main-body leftmenu">
+
+    <!-- jquery -->
+
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <!-- toastr -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.0.1/js/toastr.js"></script>
+
+
+
+    <!-- Loader -->
+
+    <!--<div id="global-loader">-->
+
+    <!--    <img src="https://aadsfinancial.com/img/loader.svg" class="loader-img" alt="Loader">-->
+
+    <!--</div>-->
+
+    <!-- End Loader -->
+
+
+
+
+
+    <!-- Page -->
+
+    <div class="page">
+
+
+
+
+
+
+
+        <!-- Main Content-->
+
+        <div class="main-content">
+
+            <div class="main-container container-fluid">
+
+                <div class="inner-body">
+
+                    <div class="agile-grids">
+
+                        <div class="grids">
+
+                            <div class="row">
+
+                                <div class="col-md-5">
+
+                                    <div class="logo">
+
+                                        <a href="https://aadsfinancial.com"><img src="https://aadsfinancial.com/images/Logo-1.png" alt="logo" class="img-responsive" style="width:100px"> </a>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-7">
+
+                                    <div class="form-title">
+
+                                        <h3>AADS FINANCE</h3>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-12 pt-3">
+
+                                    <form method="POST" id="applications" enctype="multipart/form-data">
+
+                                        <input type="hidden" name="api_key" value="">
+
+                                        <div class="card custom-card">
+
+                                            <div class="card-body">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="form-grids widget-shadow" data-example-id="basic-forms">
+
+                                                            <div class="form-title">
+
+                                                                <h4>Customer Information</h4>
+
+                                                            </div>
+
+                                                            <div class="form-body">
+
+                                                                <div class="row">
+
+                                                                    <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label for="name" class="">Name*</label>
+
+                                                                            <input class="form-control" name="name" type="text" required>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label for="email" class="">Email*</label>
+
+                                                                            <input class="form-control" name="email" type="email">
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label for="mobile" class="">Mobile*</label>
+
+                                                                            <input class="form-control" required="true" name="mobile" type="number">
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label for="date_of_birth" class="">Date of
+
+                                                                                Birth</label>
+
+                                                                            <input type="date" name="date_of_birth" class="form-control">
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label for="gender" class="">Gender</label>
+
+                                                                            <select name="gender" required="true" class="form-control">
+
+                                                                                <option value="">Select</option>
+
+                                                                                <option value="Male">Male</option>
+
+                                                                                <option value="Female">Female
+
+                                                                                </option>
+
+                                                                            </select>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label for="gender" class="">
+
+                                                                                Cibil Score</label>
+
+                                                                            <input name="score" class="form-control" type="text">
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label for=" Cibil Score" class="">Upload Current
+
+                                                                                Cibil Score</label>
+
+                                                                            <!-- <input type="file" value="normal" name="provider"> -->
+
+                                                                            <input name="score_file[]" class="form-control" type="file">
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label for="gender" class="">
+
+                                                                                Address</label>
+
+                                                                                <textarea name="address" class="form-control"></textarea>
+
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card custom-card">
+
+                                            <div class="card-body">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="form-grids widget-shadow" data-example-id="basic-forms">
+
+                                                            <div class="form-title">
+
+                                                                <h4>Personal Details</h4>
+
+                                                            </div>
+
+                                                            <div class="form-body">
+
+                                                                <div class="row">
+
+                                                                    <div class="col-md-12">
+
+                                                                        <label style="margin-top: 15px; font-size: 15px; font-weight: 500;">Name
+
+                                                                            As Per Pan</label>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-3">
+
+                                                                        <label class="sub-label">Salutation</label>
+
+                                                                        <select name="salutation" class="form-control" required="true">
+
+                                                                            <option value="Mr.">Mr.</option>
+
+                                                                            <option value="Mrs.">Mrs.</option>
+
+                                                                            <option value="Miss.">Miss</option>
+
+                                                                            <option value="Dr.">Dr.</option>
+
+                                                                            <option value="Prof.">Prof.</option>
+
+                                                                            <option value="Rev.">Rev.</option>
+
+                                                                            <option value="Other">Other</option>
+
+                                                                        </select>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-9">
+
+                                                                        <div class="row">
+
+                                                                            <div class="col-md-4">
+
+                                                                                <div class="form-group">
+
+                                                                                    <label class="sub-label">First
+
+                                                                                        Name*</label>
+
+                                                                                    <input name="name" class="form-control" type="text" required>
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-md-4">
+
+                                                                                <div class="form-group">
+
+                                                                                    <label class="sub-label">Middle
+
+                                                                                        Name</label>
+
+                                                                                    <input name="middle_name" class="form-control" value="" type="text">
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-md-4">
+
+                                                                                <div class="form-group">
+
+                                                                                    <label class="sub-label">Last
+
+                                                                                        Name</label>
+
+                                                                                    <input name="last_name" class="form-control" type="text">
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+
+
+
+
+                                                                    </div>
+
+
+
+                                                                </div>
+
+
+
+
+
+
+
+                                                                <div class="row">
+
+                                                                    <div class="col-md-12">
+
+                                                                        <label style="margin-top: 15px; font-size: 15px; font-weight: 500;">Father
+
+                                                                            Name</label>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-3">
+
+                                                                        <label class="sub-label">Salutation</label>
+
+                                                                        <select name="father_salutation" class="form-control" required="true">
+
+                                                                            <option selected value="Mr.">Mr.</option>
+
+                                                                            <option value="Dr.">Dr.</option>
+
+                                                                            <option value="Prof.">Prof.</option>
+
+                                                                            <option value="Rev.">Rev.</option>
+
+                                                                            <option value="Other">Other</option>
+
+                                                                        </select>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-9">
+
+                                                                        <div class="row">
+
+                                                                            <div class="col-md-4">
+
+                                                                                <div class="form-group">
+
+                                                                                    <label class="sub-label">First
+
+                                                                                        Name</label>
+
+                                                                                    <input name="father_first_name" class="form-control" type="text">
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-md-4">
+
+                                                                                <div class="form-group">
+
+                                                                                    <label class="sub-label">Middle
+
+                                                                                        Name</label>
+
+                                                                                    <input name="father_middle_name" class="form-control" type="text">
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-md-4">
+
+                                                                                <div class="form-group">
+
+                                                                                    <label class="sub-label">Last
+
+                                                                                        Name</label>
+
+                                                                                    <input name="father_last_name" class="form-control" type="text">
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="row">
+
+                                                                    <div class="col-md-12">
+
+                                                                        <label style="margin-top: 15px; font-size: 15px; font-weight: 500;">Mother
+
+                                                                            Name</label>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-3">
+
+                                                                        <label class="sub-label">Salutation</label>
+
+                                                                        <select name="mother_salutation" class="form-control">
+
+                                                                            <option value="Mr.">Mr.</option>
+
+                                                                            <option selected value="Mrs.">Mrs.</option>
+
+                                                                            <option value="Miss.">Miss</option>
+
+                                                                            <option value="Dr.">Dr.</option>
+
+                                                                            <option value="Prof.">Prof.</option>
+
+                                                                            <option value="Rev.">Rev.</option>
+
+                                                                            <option value="Other">Other</option>
+
+                                                                        </select>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-9">
+
+                                                                        <div class="row">
+
+                                                                            <div class="col-md-4">
+
+                                                                                <div class="form-group">
+
+                                                                                    <label class="sub-label">First
+
+                                                                                        Name</label>
+
+                                                                                    <input name="mother_first_name" class="form-control" type="text">
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-md-4">
+
+                                                                                <div class="form-group">
+
+                                                                                    <label class="sub-label">Middle
+
+                                                                                        Name</label>
+
+                                                                                    <input name="mother_middle_name" class="form-control" type="text">
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-md-4">
+
+                                                                                <div class="form-group">
+
+                                                                                    <label class="sub-label">Last
+
+                                                                                        Name</label>
+
+                                                                                    <input name="mother_last_name" class="form-control" type="text">
+
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                                <div class="row">
+
+                                                                    <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label class="sub-label">Nationality</label>
+
+                                                                            <select name="nationality" class="form-control">
+                                                                                <option value="India">India</option>
+                                                                            </select>
+                                                                        </div>
+
+                                                                    </div>
+
+
+
+
+
+                                                                    <!-- <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label class="sub-label">Marital
+
+                                                                                Status</label>
+
+                                                                            <input name="marital_status" class="form-control" type="text">
+
+                                                                        </div>
+
+                                                                    </div> -->
+
+
+
+                                                                    <!-- <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label class="sub-label">Citizenship</label>
+
+                                                                            <input name="nationality" class="form-control" value="Indian" type="text">
+
+                                                                        </div>
+
+                                                                    </div> -->
+
+
+
+                                                                    <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label class="sub-label">Residential
+
+                                                                                Status</label>
+
+                                                                            <input name="residential_status" class="form-control" type="text">
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-12"></div>
+
+                                                                    <!-- <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label class="sub-label">Aadhar
+
+                                                                                No.</label><br>
+
+                                                                            <input name="aadhar_no" class="form-control" type="text">
+
+                                                                        </div>
+
+                                                                    </div>
+
+                                                                    <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label class="sub-label">Aadhar
+
+                                                                                Card</label><br>
+
+                                                                            <input name="aadhar_card" class="form-control" type="file">
+
+                                                                        </div>
+
+                                                                    </div> -->
+
+                                                                    <!-- <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label class="sub-label">PAN No.</label><br>
+
+                                                                            <input name="pan_no" class="form-control" type="text">
+
+                                                                        </div>
+
+                                                                    </div> -->
+
+                                                                    <!-- <div class="col-md-6">
+
+                                                                        <div class="form-group">
+
+                                                                            <label class="sub-label">PAN
+
+                                                                                Card</label><br>
+
+                                                                            <input name="pan_card" class="form-control" type="file">
+
+                                                                        </div>
+
+                                                                    </div> -->
+
+                                                                    <div class="col-md-12"></div>
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <!-- <div class="card custom-card">
+
+                                            <div class="card-body">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="form-title">
+
+                                                            <h4>Address Details</h4>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Address Line 1</label>
+
+                                                                    <input name="residential_address_line_1" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Address Line 2</label>
+
+                                                                    <input name="residential_address_line_2" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Address Line 3</label>
+
+                                                                    <input name="residential_address_line_3" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">City/Town/Village</label>
+
+                                                                    <input name="city_town_village" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">District</label>
+
+                                                                    <input name="district" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Pin/Post code</label>
+
+                                                                    <input name="pin_post_code" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">State ut code</label>
+
+                                                                    <input name="state_ut_code" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Tel. Office</label>
+
+                                                                    <input name="tel_office" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Tel. Residence</label>
+
+                                                                    <input name="tel_residence" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div> -->
+
+                                        <div class="card custom-card">
+
+                                            <div class="card-body">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="form-title">
+
+                                                            <h4>Guarantor Details</h4>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Name</label>
+
+                                                                    <input name="g_name" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Mobile</label>
+
+                                                                    <input name="g_mobile" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Relation</label>
+
+                                                                    <input name="g_relation" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">DOB</label>
+
+                                                                    <input name="g_dob" id="dob" class="form-control" type="date" pattern="\d{2}-\d{2}-\d{2}" placeholder="dd-mm-yy">
+
+
+
+                                                                    <!-- <input name="dob" class="form-control" value="" type="date"> -->
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Occupation</label>
+
+                                                                    <input name="g_occupation" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Income Slab</label>
+
+                                                                    <input name="g_income_slab" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Aadhar Card</label>
+
+                                                                    <input name="g_aadhar[]" class="form-control" value="" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Pan Card</label>
+
+                                                                    <input name="g_pan[]" class="form-control" value="" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card custom-card">
+
+                                            <div class="card-body">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="row">
+
+                                                            <!-- Loan Type Selection -->
+
+                                                            <div class="col-md-12">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Loan Type</label>
+
+                                                                    <div>
+
+                                                                        <label>
+
+                                                                            <input type="radio" name="loan_type"
+
+                                                                                value="bussiness"
+
+                                                                                onclick="toggleLoanForm()"> Business
+
+                                                                            Loan
+
+                                                                        </label>
+
+                                                                        <label>
+
+                                                                            <input type="radio" name="loan_type"
+
+                                                                                value="personal"
+
+                                                                                onclick="toggleLoanForm()"> Personal
+
+                                                                            Loan
+
+                                                                        </label>
+
+                                                                        <label>
+
+                                                                            <input type="radio" name="loan_type"
+
+                                                                                value="home" onclick="toggleLoanForm()">
+
+                                                                            Home Loan
+
+                                                                        </label>
+
+                                                                        <label>
+
+                                                                            <input type="radio" name="loan_type"
+
+                                                                                value="property"
+
+                                                                                onclick="toggleLoanForm()"> Property
+
+                                                                            Loan
+
+                                                                        </label>
+
+                                                                        <label>
+
+                                                                            <input type="radio" name="loan_type"
+
+                                                                                value="car" onclick="toggleLoanForm()">
+
+                                                                            Car Loan
+
+                                                                        </label>
+
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                            <div class="col-md-6" id="homeLoan" style="display: none;">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Loan Type</label>
+
+                                                                    <select id="homeLoanTypeSelect" name="loan_type_occupation" class="form-control" onchange="toggleHomeLoanDetails()">
+
+                                                                        <option value="">Select Loan Type</option>
+
+                                                                        <option value="homeSalaried">Salaried</option>
+
+                                                                        <option value="homeSelfEmployed">Self-Employed
+
+                                                                        </option>
+
+                                                                    </select>
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                            <div class="col-md-6" id="propertyLoan" style="display: none;">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Loan Type</label>
+
+                                                                    <select id="propertyLoanTypeSelect" name="loan_type_occupation" class="form-control" onchange="togglePropertyLoanDetails()">
+
+                                                                        <option value="">Select Loan Type</option>
+
+                                                                        <option value="propertySalaried">Salaried
+
+                                                                        </option>
+
+                                                                        <option value="propertySelfEmployed">
+
+                                                                            Self-Employed</option>
+
+                                                                    </select>
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                            <div class="col-md-6" id="CarLoan" style="display: none;">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Loan Type</label>
+
+                                                                    <select id="carLoanTypeSelect" name="loan_type_occupation" class="form-control" onchange="toggleCarLoanDetails()">
+
+                                                                        <option value="">Select Loan Type</option>
+
+                                                                        <option value="carSalaried">Salaried</option>
+
+                                                                        <option value="carSelfEmployed">Self-employed
+
+                                                                        </option>
+
+                                                                    </select>
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card custom-card">
+
+                                            <div class="card-body" id="BussinessLoan" style="display: none;">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="form-title">
+
+                                                            <h4>Business Loan</h4>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Photo</label>
+
+                                                                   <input type="file" name="photo[]" class="form-control" multiple>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Business Type</label>
+
+                                                                    <input name="business_type" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">How Old is your
+
+                                                                        business?</label>
+
+                                                                    <input name="how_old_your_business" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Is your business GST
+
+                                                                        registered? </label>
+
+                                                                    <input name="is_gst_register" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Is your MSME /UDHYAM
+
+                                                                        registered? </label>
+
+                                                                    <input name="msme_register" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Yearly Sales?</label>
+
+                                                                    <input name="yearly_sale" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">1 yrs bank statement
+
+                                                                        current or
+
+                                                                        saving latest</label>
+
+                                                                    <input name="bank_statement[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">3 yrs ITR with
+
+                                                                        computation & balance sheet</label>
+
+                                                                    <input name="itr[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Electricity bill</label>
+
+                                                                    <input name="electricity_bill[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">GST Certificate</label>
+
+                                                                    <input name="gst_certificate[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director ITR</label>
+
+                                                                    <input name="director_itr[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director Aadhar
+
+                                                                        Card</label>
+
+                                                                    <input name="director_aadhar[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director Pan Card</label>
+
+                                                                    <input name="director_pan[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director Photo</label>
+
+                                                                    <input name="director_photo[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card custom-card">
+
+                                            <div class="card-body" id="personalLoan" style="display: none;">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="form-title">
+
+                                                            <h4>Personal Loan</h4>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Monthly Salary</label>
+
+                                                                    <input name="monthly_salary" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">3 month Salary Slip</label>
+
+                                                                    <input name="salary_slip[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">6 month Bank statement
+
+                                                                        latest</label>
+
+                                                                    <input name="bank_statement[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                        <div class="card custom-card">
+
+                                            <div class="card-body" id="homeSalaried" style="display: none;">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="form-title">
+
+                                                            <h4>Home loan for salaried</h4>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Monthly Salary</label>
+
+                                                                    <input name="monthly_salary" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Monthly Salary Slip</label>
+
+                                                                    <input name="salary_slip[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">1 year Bank statement
+
+                                                                        latest</label>
+
+                                                                    <input name="bank_statement[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Sales deed - property
+
+                                                                        paper</label>
+
+                                                                    <input name="property_paper[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">3 yrs ITR with
+
+                                                                        computation</label>
+
+                                                                    <input name="itr[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Co-applicant
+
+                                                                        Aadhaar</label>
+
+                                                                    <input name="co_applicant_aadhar[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Pan No.</label>
+
+                                                                    <input name="pan_no" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Photo</label>
+
+                                                                   <input type="file" name="photo[]" class="form-control" multiple>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card custom-card">
+
+                                            <div class="card-body" id="homeSelfEmployed" style="display: none;">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="form-title">
+
+                                                            <h4>Home loan for Self-Employed</h4>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Photo</label>
+
+                                                                  <input type="file" name="photo[]" class="form-control" multiple>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Business Type</label>
+
+                                                                    <input name="business_type" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">How Old is your
+
+                                                                        business?</label>
+
+                                                                    <input name="how_old_your_business" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Is your business GST
+
+                                                                        registered? </label>
+
+                                                                    <input name="is_gst_register" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Is your MSME /UDHYAM
+
+                                                                        registered? </label>
+
+                                                                    <input name="msme_register" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Yearly Sales?</label>
+
+                                                                    <input name="yearly_sale" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">1 year Bank statement
+
+                                                                        latest</label>
+
+                                                                    <input name="bank_statement[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">3 yrs ITR with
+
+                                                                        computation</label>
+
+                                                                    <input name="itr[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Sales deed - property
+
+                                                                        paper</label>
+
+                                                                    <input name="property_paper[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Business Proof </label>
+
+                                                                    <input name="business_proof[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Co-applicant
+
+                                                                        Aadhaar</label>
+
+                                                                    <input name="co_applicant_aadhar[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Pan No.</label>
+
+                                                                    <input name="pan_no" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                           
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">GST Certificate</label>
+
+                                                                    <input name="gst_certificate[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director ITR</label>
+
+                                                                    <input name="director_itr[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director Aadhar
+
+                                                                        Card</label>
+
+                                                                    <input name="director_aadhar[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director Pan Card</label>
+
+                                                                    <input name="director_pan[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director Photo</label>
+
+                                                                    <input name="director_photo[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card custom-card">
+
+                                            <div class="card-body" id="propertySalaried" style="display: none;">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="form-title">
+
+                                                            <h4>Property Loan for salaried</h4>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Monthly Salary</label>
+
+                                                                    <input name="monthly_salary" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">3 Month Salary Slip</label>
+
+                                                                    <input name="salary_slip[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">1 year Bank statement
+
+                                                                        latest</label>
+
+                                                                    <input name="bank_statement[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">property paper</label>
+
+                                                                    <input name="property_paper[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">3 yrs ITR with
+
+                                                                        computation</label>
+
+                                                                    <input name="itr[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Co-applicant
+
+                                                                        Aadhaar</label>
+
+                                                                    <input name="co_applicant_aadhar[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Pan No.</label>
+
+                                                                    <input name="pan_no" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Photo</label>
+
+                                                                   <input type="file" name="photo[]" class="form-control" multiple>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card custom-card">
+
+                                            <div class="card-body" id="propertySelfEmployed" style="display: none;">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="form-title">
+
+                                                            <h4>Property loan for Self-Employed</h4>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Photo</label>
+
+                                                                   <input type="file" name="photo[]" class="form-control" multiple>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Business Type</label>
+
+                                                                    <input name="business_type" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">How Old is your
+
+                                                                        business?</label>
+
+                                                                    <input name="how_old_your_business" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Is your business GST
+
+                                                                        registered? </label>
+
+                                                                    <input name="is_gst_register" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Is your MSME /UDHYAM
+
+                                                                        registered? </label>
+
+                                                                    <input name="msme_register" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Yearly Sales?</label>
+
+                                                                    <input name="yearly_sale" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">1 year Bank statement
+
+                                                                        latest</label>
+
+                                                                    <input name="bank_statement[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">3 yrs ITR with
+
+                                                                        computation</label>
+
+                                                                    <input name="itr[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Sales deed - property
+
+                                                                        paper</label>
+
+                                                                    <input name="property_paper[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Business Proof </label>
+
+                                                                    <input name="business_proof[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Co-applicant
+
+                                                                        Aadhaar</label>
+
+                                                                    <input name="co_applicant_aadhar[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Pan No.</label>
+
+                                                                    <input name="pan_no" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">GST Certificate</label>
+
+                                                                    <input name="gst_certificate[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director ITR</label>
+
+                                                                    <input name="director_itr[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director Aadhar
+
+                                                                        Card</label>
+
+                                                                    <input name="director_aadhar[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director Pan Card</label>
+
+                                                                    <input name="director_pan[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director Photo</label>
+
+                                                                    <input name="director_photo[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card custom-card">
+
+                                            <div class="card-body" id="carSalaried" style="display: none;">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="form-title">
+
+                                                            <h4>Car Loan for Salaried</h4>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">3 Month Salary Slip</label>
+
+                                                                    <input name="salary_slip[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">1 year Bank statement
+
+                                                                        latest</label>
+
+                                                                    <input name="bank_statement[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">3 yrs ITR with
+
+                                                                        computation</label>
+
+                                                                    <input name="itr[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Electricity Bill</label>
+
+                                                                    <input name="electricity_bill[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Quatation</label>
+
+                                                                    <input name="quatation[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">if used car upload RC &
+
+                                                                        insurance</label>
+
+                                                                    <input name="rc_and_insurance[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="card custom-card">
+
+                                            <div class="card-body" id="carSelfEmployed" style="display: none;">
+
+                                                <div class="panel panel-widget forms-panel" style="float: left;width: 100%; padding-bottom: 20px;">
+
+                                                    <div class="forms">
+
+                                                        <div class="form-title">
+
+                                                            <h4>Car Loan for Self-employed</h4>
+
+                                                        </div>
+
+                                                        <div class="row">
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Photo</label>
+
+                                                                  <input type="file" name="photo[]" class="form-control" multiple>
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Business Type</label>
+
+                                                                    <input name="business_type" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">How Old is your
+
+                                                                        business?</label>
+
+                                                                    <input name="how_old_your_business" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Is your business GST
+
+                                                                        registered? </label>
+
+                                                                    <input name="is_gst_register" class="form-control" value="" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Is your MSME /UDHYAM
+
+                                                                        registered? </label>
+
+                                                                    <input name="msme_register" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Yearly Sales?</label>
+
+                                                                    <input name="yearly_sale" class="form-control" type="text">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Gst Certificate</label>
+
+                                                                    <input name="gst_certificate[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">1 year Bank statement
+
+                                                                        latest</label>
+
+                                                                    <input name="bank_statement[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">3 yrs ITR with
+
+                                                                        computation</label>
+
+                                                                    <input name="itr[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Electricity Bill</label>
+
+                                                                    <input name="electricity_bill[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director ITR</label>
+
+                                                                    <input name="director_itr[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director Aadhar
+
+                                                                        Card</label>
+
+                                                                    <input name="director_aadhar[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director Pan Card</label>
+
+                                                                    <input name="director_pan[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                            <div class="col-md-6">
+
+                                                                <div class="form-group">
+
+                                                                    <label class="sub-label">Director Photo</label>
+
+                                                                    <input name="director_photo[]" class="form-control" type="file">
+
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-md-12 text-center mb-5">
+
+                                            <button type="submit" type="submit" class="btn btn-primary">Submit</button>
+
+                                        </div>
+
+                                    </form>
+
+
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <style type="text/css">
+                        .form-body li {
+
+                            list-style: none;
+
+                            font-size: 16px;
+
+                            margin-bottom: 10px;
+
+                        }
+
+
+
+                        .form-body li span {
+
+                            color: #1777e5;
+
+                        }
+
+
+
+                        .cm_type {
+
+                            float: left;
+
+                            color: #000 !important;
+
+                            background: #ffff;
+
+                            padding: 9px 22px;
+
+                            border: 1px solid #000;
+
+                            border-radius: 25px;
+
+                            margin-right: 25px;
+
+                            font-size: 14px;
+
+                            /*cursor: pointer;*/
+
+                            margin-bottom: 15px;
+
+                            margin-top: 0px;
+
+                        }
+
+
+
+                        .cm_type.active {
+
+                            background: #FF6722;
+
+                            color: #fff !important;
+
+                        }
+
+
+
+                        @media print {
+
+                            .noPrint {
+
+                                display: none !important;
+
+                            }
+
+                            .col-1,
+
+                            .col-2,
+
+                            .col-3,
+
+                            .col-4,
+
+                            .col-5,
+
+                            .col-6,
+
+                            .col-7,
+
+                            .col-8,
+
+                            .col-9,
+
+                            .col-10,
+
+                            .col-11,
+
+                            .col-12,
+
+                            .col,
+
+                            .col-auto,
+
+                            .col-sm-1,
+
+                            .col-sm-2,
+
+                            .col-sm-3,
+
+                            .col-sm-4,
+
+                            .col-sm-5,
+
+                            .col-sm-6,
+
+                            .col-sm-7,
+
+                            .col-sm-8,
+
+                            .col-sm-9,
+
+                            .col-sm-10,
+
+                            .col-sm-11,
+
+                            .col-sm-12,
+
+                            .col-sm,
+
+                            .col-sm-auto,
+
+                            .col-md-1,
+
+                            .col-md-2,
+
+                            .col-md-3,
+
+                            .col-md-4,
+
+                            .col-md-5,
+
+                            .col-md-6,
+
+                            .col-md-7,
+
+                            .col-md-8,
+
+                            .col-md-9,
+
+                            .col-md-10,
+
+                            .col-md-11,
+
+                            .col-md-12,
+
+                            .col-md,
+
+                            .col-md-auto,
+
+                            .col-lg-1,
+
+                            .col-lg-2,
+
+                            .col-lg-3,
+
+                            .col-lg-4,
+
+                            .col-lg-5,
+
+                            .col-lg-6,
+
+                            .col-lg-7,
+
+                            .col-lg-8,
+
+                            .col-lg-9,
+
+                            .col-lg-10,
+
+                            .col-lg-11,
+
+                            .col-lg-12,
+
+                            .col-lg,
+
+                            .col-lg-auto,
+
+                            .col-xl-1,
+
+                            .col-xl-2,
+
+                            .col-xl-3,
+
+                            .col-xl-4,
+
+                            .col-xl-5,
+
+                            .col-xl-6,
+
+                            .col-xl-7,
+
+                            .col-xl-8,
+
+                            .col-xl-9,
+
+                            .col-xl-10,
+
+                            .col-xl-11,
+
+                            .col-xl-12,
+
+                            .col-xl,
+
+                            .col-xl-auto {
+
+                                position: relative;
+
+                                width: 100% !important;
+
+                                padding-right: 15px !important;
+
+                                padding-left: 15px !important;
+
+                            }
+
+                            .col-md-6 {
+
+                                flex: 0 0 50%;
+
+                                max-width: 50%;
+
+                            }
+
+                            .form-group {
+
+                                margin-bottom: 1rem;
+
+                            }
+
+                            .form-control {
+
+                                display: block;
+
+                                width: 100%;
+
+                                height: calc(1.5em + 0.75rem + 2px);
+
+                                padding: 0.175rem 2.25rem 0.175rem 0.75rem;
+
+                                font-size: 0.875rem;
+
+                                font-weight: 400;
+
+                                line-height: 1.5;
+
+                                background-color: #ffffff;
+
+                                background-clip: padding-box;
+
+                                border: 1px solid #e8e8f7;
+
+                                border-radius: 3px;
+
+                                transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+                                height: 38px;
+
+                                border-radius: 5px;
+
+                            }
+
+                            .form-control {
+
+                                color: #000;
+
+                            }
+
+                            .row {
+
+                                display: flex;
+
+                                flex-wrap: wrap;
+
+                                margin-right: -15px;
+
+                                margin-left: -15px;
+
+                            }
+
+                            .col-md-4 {
+
+                                flex: 0 0 33.33333%;
+
+                                max-width: 33.33333%;
+
+                            }
+
+                            .col-md-3 {
+
+                                flex: 0 0 25%;
+
+                                max-width: 25%;
+
+                            }
+
+                            .col-md-12 {
+
+                                flex: 0 0 100%;
+
+                                max-width: 100%;
+
+                            }
+
+                            .col-md-9 {
+
+                                flex: 0 0 75%;
+
+                                max-width: 75%;
+
+                            }
+
+                            @page {
+
+                                size: auto;
+
+                                margin: 0mm;
+
+                            }
+
+                        }
+
+
+
+                        .custom-card {
+
+                            margin-bottom: 10px;
+
+                        }
+                    </style>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- End Main Content-->
+
+
+
+    </div>
+
+    <!-- End Page -->
+
+    <!-- Back-to-top -->
+
+    <a href="#top" id="back-to-top"><i class="fe fe-arrow-up"></i></a>
+
+    <script src="https://aadsfinancial.com/js/jquery2.0.3.min.js"></script>
+
+    <script src="https://aadsfinancial.com/js/skycons.js"></script>
+
+    <script src="https://aadsfinancial.com/js/raphael-min.js"></script>
+
+    <script src="https://aadsfinancial.com/js/morris.js"></script>
+
+
+
+    <script src="https://aadsfinancial.com/plugins/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap js-->
+
+    <script src="https://aadsfinancial.com/plugins/bootstrap/js/popper.min.js"></script>
+
+    <script src="https://aadsfinancial.com/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Internal Chart.Bundle js-->
+
+    <script src="https://aadsfinancial.com/plugins/chart.js/Chart.bundle.min.js"></script>
+
+    <!-- Peity js-->
+
+    <script src="https://aadsfinancial.com/plugins/peity/jquery.peity.min.js"></script>
+
+    <!-- Select2 js-->
+
+    <script src="https://aadsfinancial.com/plugins/select2/js/select2.min.js"></script>
+
+    <script src="https://aadsfinancial.com/js/select2.js"></script>
+
+    <!-- Perfect-scrollbar js -->
+
+    <script src="https://aadsfinancial.com/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+    <!-- Sidemenu js -->
+
+    <script src="https://aadsfinancial.com/plugins/sidemenu/sidemenu.js"></script>
+
+    <!-- Sidebar js -->
+
+    <script src="https://aadsfinancial.com/plugins/sidebar/sidebar.js"></script>
+
+    <!-- Internal Morris js -->
+
+    <script src="https://aadsfinancial.com/plugins/raphael/raphael.min.js"></script>
+
+    <script src="https://aadsfinancial.com/plugins/morris.js/morris.min.js"></script>
+
+    <!-- Circle Progress js-->
+
+    <script src="https://aadsfinancial.com/js/circle-progress.min.js"></script>
+
+    <script src="https://aadsfinancial.com/js/chart-circle.js"></script>
+
+    <!-- Internal Dashboard js-->
+
+    <script src="https://aadsfinancial.com/js/index.js"></script>
+
+    <!-- Color Theme js -->
+
+    <script src="https://aadsfinancial.com/js/themeColors.js"></script>
+
+    <!-- Sticky js -->
+
+    <script src="https://aadsfinancial.com/js/sticky.js"></script>
+
+    <!-- Custom js -->
+
+    <script src="https://aadsfinancial.com/js/custom.js"></script>
+
+    <!--<script src="https://aadsfinancial.com/js/template.js"></script>-->
+
+    <script src="https://aadsfinancial.com/plugins/jquery-ui/ui/widgets/datepicker.js"></script>
+
+    <script src="https://aadsfinancial.com/plugins/bootstrap-daterangepicker/moment.min.js"></script>
+
+    <script src="https://aadsfinancial.com/plugins/daterangepicker.js"></script>
+
+    <script src="https://aadsfinancial.com/plugins/telephoneinput/telephoneinput.js"></script>
+
+    <script src="https://aadsfinancial.com/plugins/telephoneinput/inttelephoneinput.js"></script>
+    
+     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+    
+        function getTokenFromUrl() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get('token'); 
+        }
+        $(document).ready(function () {
+            $("#applications").on("submit", function (e) {
+                e.preventDefault();
+                var formData = new FormData(this);
+                const apiKey = getTokenFromUrl();
+                console.log(apiKey);
+                if (apiKey) {
+                    formData.append('api_key', apiKey); 
+                }
+                $.ajax({
+                    url: "https://www.aadsfinancial.com/api/v1/loan-data",
+                    type: "POST",
+                    data: formData,
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        if(response.status==200){
+                            alert('Form submitted successfully!'); 
+                        }else{
+                            alert('Error submitting form'); 
+                        }
+                    }
+                });
+            });
+        });
+        // $(document).ready(function () {
+        //     $('applications').submit(function (e) {
+        //         e.preventDefault();
+                
+        //         const formData = new FormData(this); 
+    
+        //         const apiKey = getTokenFromUrl();
+        //         console.log(apiKey);
+        //         if (apiKey) {
+        //             formData.append('api_key', apiKey); 
+        //         }
+        //         $.ajax({
+        //             url: 'https://www.aadsfinancial.com/api/v1/loan-data',
+        //             type: 'POST',
+        //             data: formData,
+        //         }).always(function (response) {
+        //             console.log(response);
+        //         });
+            
+        //         return false;
+        //     });
+        // });
+        // document.getElementById('applications').addEventListener('submit', function(e) {
+        //     e.preventDefault();
+    
+        //     const formData = new FormData(this); 
+    
+        //     const apiKey = getTokenFromUrl();
+        //     console.log(apiKey);
+        //     if (apiKey) {
+        //         formData.append('api_key', apiKey); 
+        //     }
+    
+        //     fetch('https://www.aadsfinancial.com/api/v1/loan-data', {
+        //             method: 'GET',
+        //             body: formData,
+        //         })
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             if (data.status === 200) {
+        //                 alert('Form submitted successfully!');
+        //                 console.log('Response:', data);
+        //             } else {
+        //                 alert('Error submitting form');
+        //                 console.error('Error:', data.message);
+        //             }
+        //         })
+        //         .catch(error => {
+        //             console.error('Request failed', error);
+        //             alert('Failed to submit form');
+        //         });
+        // });
+    </script>
+
+
+    // <script>
+    
+        
+    //     function getTokenFromUrl() {
+    //         const urlParams = new URLSearchParams(window.location.search);
+    //         return urlParams.get('token'); 
+    //     }
+    //     $(document).ready(function () {
+    //         $('applications').submit(function (e) {
+    //             e.preventDefault();
+                
+    //             const formData = new FormData(this); 
+    
+    //             const apiKey = getTokenFromUrl();
+    //             console.log(apiKey);
+    //             if (apiKey) {
+    //                 formData.append('api_key', apiKey); 
+    //             }
+    //             $.ajax({
+    //                 url: 'https://www.aadsfinancial.com/api/v1/loan-data',
+    //                 type: 'POST',
+    //                 data: formData,
+    //             }).always(function (response) {
+    //                 console.log(response);
+    //             });
+            
+    //             return false;
+    //         });
+    //     });
+        // document.getElementById('applications').addEventListener('submit', function(e) {
+        //     e.preventDefault();
+    
+        //     const formData = new FormData(this); 
+    
+        //     const apiKey = getTokenFromUrl();
+        //     console.log(apiKey);
+        //     if (apiKey) {
+        //         formData.append('api_key', apiKey); 
+        //     }
+    
+        //     fetch('https://www.aadsfinancial.com/api/v1/loan-data', {
+        //             method: 'GET',
+        //             body: formData,
+        //         })
+        //         .then(response => response.json())
+        //         .then(data => {
+        //             if (data.status === 200) {
+        //                 alert('Form submitted successfully!');
+        //                 console.log('Response:', data);
+        //             } else {
+        //                 alert('Error submitting form');
+        //                 console.error('Error:', data.message);
+        //             }
+        //         })
+        //         .catch(error => {
+        //             console.error('Request failed', error);
+        //             alert('Failed to submit form');
+        //         });
+        // });
+    </script>
+</body>
+
+
+
+<script>
+    function toggleLoanForm() {
+
+        // Hide all loan forms
+
+        const loanForms = ['homeLoan', 'propertyLoan', 'CarLoan', 'BussinessLoan', 'personalLoan'];
+
+
+
+        loanForms.forEach(function(form) {
+
+            document.getElementById(form).style.display = 'none';
+
+        });
+
+        document.getElementById("homeSalaried").style.display = "none";
+
+        document.getElementById("homeSelfEmployed").style.display = "none";
+
+        document.getElementById("propertySalaried").style.display = "none";
+
+        document.getElementById("propertySelfEmployed").style.display = "none";
+
+        document.getElementById("carSalaried").style.display = "none";
+
+        document.getElementById("carSelfEmployed").style.display = "none";
+
+        // Get the selected loan type
+
+        var loanType = document.querySelector('input[name="loan_type"]:checked').value;
+
+        // console.log(loanType);
+
+        // Show the selected loan form
+
+        if (loanType === "home") {
+
+            document.getElementById("homeLoan").style.display = "block";
+
+        } else if (loanType === "property") {
+
+            document.getElementById("propertyLoan").style.display = "block";
+
+        } else if (loanType === "car") {
+
+            document.getElementById("CarLoan").style.display = "block";
+
+        } else if (loanType === "bussiness") {
+
+            document.getElementById("BussinessLoan").style.display = "block";
+
+        } else if (loanType === "personal") {
+
+            document.getElementById("personalLoan").style.display = "block";
+
+        }
+
+    }
+
+
+
+    function toggleHomeLoanDetails() {
+
+        // Hide all home loan options
+
+        document.getElementById("homeSalaried").style.display = "none";
+
+        document.getElementById("homeSelfEmployed").style.display = "none";
+
+        document.getElementById("propertySalaried").style.display = "none";
+
+        document.getElementById("propertySelfEmployed").style.display = "none";
+
+        document.getElementById("carSalaried").style.display = "none";
+
+        document.getElementById("carSelfEmployed").style.display = "none";
+
+        // Show selected home loan option
+
+        var selectedLoan = document.getElementById("homeLoanTypeSelect").value;
+
+        if (selectedLoan === "homeSalaried") {
+
+            document.getElementById("homeSalaried").style.display = "block";
+
+        } else if (selectedLoan == "homeSelfEmployed") {
+
+            document.getElementById("homeSelfEmployed").style.display = "block";
+
+        }
+
+    }
+
+
+
+    function togglePropertyLoanDetails() {
+
+        // Hide all property loan options
+
+        document.getElementById("propertySalaried").style.display = "none";
+
+        document.getElementById("propertySelfEmployed").style.display = "none";
+
+        document.getElementById("homeSalaried").style.display = "none";
+
+        document.getElementById("homeSelfEmployed").style.display = "none";
+
+        document.getElementById("carSalaried").style.display = "none";
+
+        document.getElementById("carSelfEmployed").style.display = "none";
+
+        // Show selected property loan option
+
+        var selectedLoan = document.getElementById("propertyLoanTypeSelect").value;
+
+        if (selectedLoan == "propertySalaried") {
+
+            document.getElementById("propertySalaried").style.display = "block";
+
+        } else if (selectedLoan == "propertySelfEmployed") {
+
+            document.getElementById("propertySelfEmployed").style.display = "block";
+
+        }
+
+    }
+
+
+
+    function toggleCarLoanDetails() {
+
+        // Hide all car loan options
+
+        document.getElementById("carSalaried").style.display = "none";
+
+        document.getElementById("carSelfEmployed").style.display = "none";
+
+        document.getElementById("homeSalaried").style.display = "none";
+
+        document.getElementById("homeSelfEmployed").style.display = "none";
+
+        document.getElementById("propertySalaried").style.display = "none";
+
+        document.getElementById("propertySelfEmployed").style.display = "none";
+
+        // Show selected car loan option
+
+        var selectedLoan = document.getElementById("carLoanTypeSelect").value;
+
+        if (selectedLoan === "carSalaried") {
+
+            document.getElementById("carSalaried").style.display = "block";
+
+        } else if (selectedLoan === "carSelfEmployed") {
+
+            document.getElementById("carSelfEmployed").style.display = "block";
+
+        }
+
+    }
+</script>
+
+
+
+
+
+</html>

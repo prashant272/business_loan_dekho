@@ -1,0 +1,23 @@
+/* Template: Pora - Insurance Agency HTML Landing Page Template*/
+.btn-call i { margin-right: 0px; margin-left: 10px;}
+.itm-media-object h4 { text-align: right; margin-bottom: 10px;}
+.itm-media-object .media .img-ab- {  margin-left: 10px;}
+.form-block input, .form-block select { text-align: right;}
+.form-block p.trm i {padding: 0px 0px 0 5px;}
+.card-2 .card-header button { text-align: right !important;}
+html .accordion .acc-icon:after { left: 10px; right: auto;}
+html .accordion .acc-icon:after, .accordion .card-title:after { left: 0;  right: auto;}
+.card-2 .card-header button { padding: 0 0px 0 0;}
+.card-2 .card-header { padding: 10px 0px 10px 20px;}
+.footer-address-list li { font-size: 16px;  text-indent: 0;  padding-left: 0;  line-height: 35px;}
+.reviewer-text {text-align: right; margin: 0 20px 0 0px;}
+footer p {text-align: right;}
+.steps-icons, .steps-icons-1 {text-align: left;}
+.footer-address-list li i {margin: 0 0px 0 10px;}
+.btn-rd2:hover:after, .btn-rd3:hover:after { right: 5px;}
+.icon-pora {width: 50px;  margin-right: 0;   margin-left: 15px;}
+/**responsive css**/
+@media only screen and (max-width: 992px){
+.header-heading, .m-text-c, .cta-heading p, .form-header, .form-header p, .form-block p.trm, .common-heading, .cta-heading { text-align: right;}
+.form-header{padding: 20px;}
+}

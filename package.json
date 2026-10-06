@@ -1,0 +1,8 @@
+{
+  "name": "businessloandekho",
+  "version": "1.0.0",
+  "description": "Vercel deployment for businessloandekho",
+  "dependencies": {
+    "nodemailer": "^6.9.13"
+  }
+}
